@@ -1,19 +1,57 @@
+/* Global */
+
+.text__section {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text__section p {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.title__section h2 {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+}
+
+.btn-orange {
+  background-color: #f18119;
+  padding: 15px 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-orange:hover {
+  background-color: #ff7b00;
+  color: #fff;
+  transition: all 0.3s;
+}
+
 /* Requirements Section */
 
 .requirement {
   background-color: #1f3b9b;
   padding: 80px 0;
 }
-.requirement__title {
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  font-size: 23px;
-  margin-bottom: 50px;
+
+.requirement .title__section h2 {
+  color: #fff;
 }
 
 .requirement__item {
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .requirement__item__img {
@@ -31,14 +69,14 @@
 }
 
 .requirement__item__text p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.5em;
 }
 
 .requirement__item__text strong {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   line-height: 1.5em;
@@ -61,4 +99,42 @@
   .requirement__item:last-child {
     margin-top: 50px;
   }
-} ;
+}
+
+/* School Districts */
+.schoolText {
+  background: #275ce4;
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* Progress */
+.progressText {
+  background: #1f3b9b;
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* Methodology */
+
+.methodology {
+  padding: 80px 0;
+}
+
+.methodology .title__section h2 {
+  margin-bottom: 20px;
+}
+
+.methodology__items ol {
+  list-style: decimal;
+}
+
+.methodology__items ol li {
+  padding-left: 15px;
+  color: #0a1541;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0;
+}
