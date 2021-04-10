@@ -1,0 +1,506 @@
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0b1541;
+}
+
+
+/* FLEX ROW */
+
+.row-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+ }
+ 
+ .row-reverse {
+    flex-direction: row-reverse;
+ }
+ 
+ .row-flex>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .row-vcenter {
+    align-items: center;
+ }
+ 
+ .row-vbottom {
+    align-items: flex-end;
+ }
+ 
+ .row-center {
+    justify-content: center;
+ }
+ 
+ @media screen and (min-width: 768px) {
+    .row-stretch {
+       justify-content: stretch;
+    }
+ }
+ 
+/* Global */
+
+.text__section {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text__section p {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.title__section h3 {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.btn-orange {
+  background-color: #f18119;
+  padding: 15px 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-orange:hover {
+  background-color: #ff7b00;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+
+
+/* hero */
+
+.hero {
+  background-image: url(../images/AR_Cover.png);
+  background-size: cover;
+  background-position: revert;
+  height: 1275px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 40px;
+  transform: rotate(225deg);
+  transition: 0.3s all;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  color: #fff;
+}
+
+.hero img {
+  width: 420px;
+  margin: 0 0 0 -60px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .hero img{
+    width: 300px;
+    margin: 0 0 0 -30px;
+  }
+}
+
+/* Finnancial */
+
+.financial {
+  padding: 100px 0;
+  position: relative;
+}
+
+.financial .row {
+  align-items: center !important;
+  display: flex;
+  margin: 0;
+}
+
+.financial .row .col-md-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.financial .col-md-5 {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .financial .row {
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .financial .row .col-md-4 {
+    width: 100%;
+  }
+
+  .financial .img img {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .financial .img img {
+    max-width: 100%;
+  }
+  .financial {
+    padding: 50px 0;
+    position: relative;
+  }
+}
+
+/* .financial img {
+    position: absolute;
+    width: 35%;
+    top: 45%;
+    transform: translateY(-49%);
+    left: -96px;
+    height: 374px;
+    object-fit: contain;
+} */
+
+.financial img {
+  max-width: 100%;
+}
+
+.content__financial h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  color: #0b1541;
+}
+
+/* .content__financial {
+  width: 74%;
+  max-width: 100%;
+  margin: 0 0 auto auto;
+  padding: 0 32px;
+} */
+
+.content__financial {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 auto auto;
+  padding: 0 32px;
+}
+
+.content__financial p {
+  font-family: "Montserrat";
+  color: #0b1541;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .content__financial {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .content__financial h2 {
+    font-size: 33px;
+  }
+  .content__financial p {
+    font-size: 19px;
+  }
+
+  .financial img {
+    position: relative;
+    top: unset;
+    transform: unset;
+  }
+}
+
+
+/* national */
+
+.national {
+  padding: 40px 0;
+  position: relative;
+}
+
+.item__national {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+}
+
+.item__national h3 {
+  padding: 40px 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item__national span {
+  display: block;
+  font-size: 48px;
+  color: #f78219;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.item__national p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 19px;
+}
+
+.item__national img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.item__national .row {
+  display: flex;
+}
+
+.item__national .row {
+  display: flex;
+  align-items: center;
+}
+
+.item__national:nth-child(even) .row {
+  text-align: right;
+}
+
+.item__national .col-md-6{
+  padding:0;
+}
+
+@media(max-width:767px){
+  .item__national .row {
+    flex-direction: column;
+  }
+  .item__national .col-md-6{
+      padding: 0 15px
+  }
+  .item__national{
+      text-align: center;
+  }
+  .item__national p{
+      padding: 20px 0
+  }
+  .item__national:nth-child(even) .row{
+      text-align: center;
+  }
+}
+
+
+
+/* Requirements Section */
+
+.requirement {
+  background-color: #1f3b9b;
+  padding: 80px 0;
+}
+
+.requirement .title__section h2 {
+  color: #fff;
+}
+
+.requirement__item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.requirement__item__img {
+  margin-right: 30px;
+}
+
+.requirement__item__img img#Mississipi {
+  width: 80px;
+  height: 140px;
+}
+
+.requirement__item__img img#NationalNC {
+  width: 140px;
+  height: 80px;
+}
+
+.requirement__item__text p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.requirement__item__text strong {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.requirement__item__text {
+  max-width: 330px;
+}
+
+@media (max-width: 992px) {
+  .requirement__item {
+    flex-direction: column;
+    margin-top: 15px 0;
+  }
+
+  .requirement__item__text {
+    max-width: 100%;
+  }
+
+  .requirement__item:last-child {
+    margin-top: 50px;
+  }
+
+  .requirement__item__img {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* Equity */
+
+.equity {
+  padding: 80px 0;
+}
+
+.equity__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.equity__item img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.equity__item strong {
+  font-size: 52px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #f18119;
+  line-height: 1.5em;
+  margin-top: -24px;
+}
+
+.equity__item p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #0b1541;
+  line-height: 1.5em;
+}
+
+.title__equity {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title__equity strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #0a1541;
+}
+
+.title__equity p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #0a1541;
+}
+
+.title__equity p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* School Districts */
+.schoolText {
+  background: #275ce4;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.schoolText .text__section {
+  width: 1000px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Progress */
+.progressText {
+  background: #1f3b9b;
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* Methodology */
+
+.methodology {
+  padding: 80px 0;
+}
+
+.methodology .title__section h3 {
+  margin-bottom: 20px;
+  color: #0b1541;
+}
+
+.methodology__items ol {
+  list-style: decimal;
+}
+
+.methodology__items ol li {
+  padding-left: 15px;
+  color: #0a1541;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0;
+}
