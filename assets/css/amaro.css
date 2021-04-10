@@ -44,10 +44,33 @@ h1, h2, h3{
     line-height: 1.2;
 }
 
+@media(max-width: 767px){
+    .hero {
+        height: 100%;
+    }
+    .hero h1 {
+        font-size: 36px;
+        color: #fff;
+        line-height: 1.2;
+    }
+}
+
 /* Finnancial */
 
 .financial {
-    padding: 60px 0;
+    padding: 100px 0;
+    position: relative
+}
+
+
+.financial img {
+    position: absolute;
+    width: 35%;
+    top: 45%;
+    transform: translateY(-49%);
+    left: -96px;
+    height: 374px;
+    object-fit: contain;
 }
 
 .content__financial h2 {
@@ -57,9 +80,10 @@ h1, h2, h3{
 }
 
 .content__financial {
-    width: 900px;
+    width: 74%;
     max-width: 100%;
     margin: 0 0 auto auto;
+    padding: 0 32px;
 }
 
 .content__financial p {
@@ -68,4 +92,23 @@ h1, h2, h3{
     font-size: 20px;
     line-height: 29px;
     margin-top: 50px;
+}
+
+@media(max-width: 767px){
+    .content__financial {
+        padding: 0 15px;
+        width: 100%;
+    }
+    .content__financial h2 {
+        font-size: 33px;
+    }
+    .content__financial p {
+        font-size: 19px;
+    }
+    
+    .financial img{
+        position: relative;
+        top: unset;
+        transform: unset;
+    }
 }
