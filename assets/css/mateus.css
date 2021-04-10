@@ -1,0 +1,64 @@
+/* Requirements Section */
+
+.requirement {
+  background-color: #1f3b9b;
+  padding: 80px 0;
+}
+.requirement__title {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+
+.requirement__item {
+  display: flex;
+  align-items: center;
+}
+
+.requirement__item__img {
+  margin-right: 30px;
+}
+
+.requirement__item__img img#Mississipi {
+  width: 80px;
+  height: 140px;
+}
+
+.requirement__item__img img#NationalNC {
+  width: 140px;
+  height: 80px;
+}
+
+.requirement__item__text p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.requirement__item__text strong {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.requirement__item__text {
+  max-width: 330px;
+}
+
+@media (max-width: 992px) {
+  .requirement__item {
+    flex-direction: column;
+    margin-top: 15px 0;
+  }
+
+  .requirement__item__text {
+    max-width: 100%;
+  }
+
+  .requirement__item:last-child {
+    margin-top: 50px;
+  }
+} ;
