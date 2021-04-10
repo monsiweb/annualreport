@@ -4,6 +4,47 @@ h1, h2, h3{
 }
 
 
+
+/* FLEX ROW */
+
+.row-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+ }
+ 
+ .row-reverse {
+    flex-direction: row-reverse;
+ }
+ 
+ .row-flex>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .row-vcenter {
+    align-items: center;
+ }
+ 
+ .row-vbottom {
+    align-items: flex-end;
+ }
+ 
+ .row-center {
+    justify-content: center;
+ }
+ 
+ @media screen and (min-width: 768px) {
+    .row-stretch {
+       justify-content: stretch;
+    }
+ }
+ 
+
 /* hero */
 
 .hero {
@@ -110,5 +151,83 @@ h1, h2, h3{
         position: relative;
         top: unset;
         transform: unset;
+    }
+}
+
+/* national */
+
+.national {
+    padding: 40px 0;
+    position: relative;
+}
+
+.item__national img {
+    width: 100%;
+}
+
+.item__national {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+
+.item__national h3 {
+    padding: 40px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item__national span {
+    display: block;
+    font-size: 48px;
+    color: #f78219;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.item__national p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.item__national img {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.item__national .row {
+    display: flex;
+}
+
+.item__national .row {
+    display: flex;
+    align-items: center;
+}
+
+.item__national:nth-child(even) .row {
+    text-align: right;
+}
+
+.item__national .col-md-6{
+    padding:0;
+}
+
+@media(max-width:767px){
+    .item__national .row {
+        flex-direction: column;
+    }
+    .item__national .col-md-6{
+        padding: 0 15px
+    }
+    .item__national{
+        text-align: center;
+    }
+    .item__national p{
+        padding: 20px 0
+    }
+    .item__national:nth-child(even) .row{
+        text-align: center;
     }
 }
