@@ -1,8 +1,9 @@
-h1, h2, h3{
-    font-family:'Montserrat', sans-serif;
-    font-weight: 600;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
-
 
 
 /* FLEX ROW */
@@ -45,66 +46,106 @@ h1, h2, h3{
  }
  
 
+
 /* hero */
 
 .hero {
-    background-image: url(../images/AR_Cover.png);
-    background-size: cover;
-    background-position: revert;
-    height: 1275px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  background-image: url(../images/AR_Cover.png);
+  background-size: cover;
+  background-position: revert;
+  height: 1275px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .hero:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 40px;
-    width: 40px;
-    transform: rotate(225deg);
-    transition: .3s all;
-    border-top: 4px solid #ffffff;
-    border-left: 4px solid #ffffff;
-    color: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 40px;
+  transform: rotate(225deg);
+  transition: 0.3s all;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  color: #fff;
 }
 
 .hero img {
-    width: 420px;
-    margin: 0 0 0 -60px;
-    display: block;
+  width: 420px;
+  margin: 0 0 0 -60px;
+  display: block;
 }
 
 .hero h1 {
-    font-size: 56px;
-    color: #fff;
-    line-height: 1.2;
+  font-size: 56px;
+  color: #fff;
+  line-height: 1.2;
 }
 
-@media(max-width: 767px){
-    .hero {
-        height: 100%;
-    }
-    .hero h1 {
-        font-size: 36px;
-        color: #fff;
-        line-height: 1.2;
-    }
+@media (max-width: 767px) {
+  .hero {
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.2;
+  }
 }
 
 /* Finnancial */
 
 .financial {
-    padding: 100px 0;
-    position: relative
+  padding: 100px 0;
+  position: relative;
 }
 
+section.financial .row {
+  align-items: center !important;
+  display: flex;
+  margin: 0;
+}
 
-.financial img {
+section.financial .row .col-md-4 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 993px) {
+  section.financial .row {
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.financial .row .col-md-4 {
+    width: 100%;
+  }
+
+  section.financial .img img {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.financial .img img {
+    max-width: 100%;
+  }
+
+  .financial {
+    padding: 50px 0;
+    position: relative;
+  }
+}
+
+/* .financial img {
     position: absolute;
     width: 35%;
     top: 45%;
@@ -112,122 +153,55 @@ h1, h2, h3{
     left: -96px;
     height: 374px;
     object-fit: contain;
+} */
+
+.financial img {
+  max-width: 100%;
 }
 
 .content__financial h2 {
-    font-size: 45px;
-    line-height: 1.2;
-    color: #0b1541;
+  font-size: 45px;
+  line-height: 1.2;
+  color: #0b1541;
 }
 
+/* .content__financial {
+  width: 74%;
+  max-width: 100%;
+  margin: 0 0 auto auto;
+  padding: 0 32px;
+} */
+
 .content__financial {
-    width: 74%;
-    max-width: 100%;
-    margin: 0 0 auto auto;
-    padding: 0 32px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 auto auto;
+  padding: 0 32px;
 }
 
 .content__financial p {
-    font-family: 'Montserrat';
-    color: #0b1541;
-    font-size: 20px;
-    line-height: 29px;
-    margin-top: 50px;
+  font-family: "Montserrat";
+  color: #0b1541;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 50px;
 }
 
-@media(max-width: 767px){
-    .content__financial {
-        padding: 0 15px;
-        width: 100%;
-    }
-    .content__financial h2 {
-        font-size: 33px;
-    }
-    .content__financial p {
-        font-size: 19px;
-    }
-    
-    .financial img{
-        position: relative;
-        top: unset;
-        transform: unset;
-    }
-}
-
-/* national */
-
-.national {
-    padding: 40px 0;
-    position: relative;
-}
-
-.item__national img {
+@media (max-width: 767px) {
+  .content__financial {
+    padding: 0 15px;
     width: 100%;
-}
+  }
+  .content__financial h2 {
+    font-size: 33px;
+  }
+  .content__financial p {
+    font-size: 19px;
+  }
 
-.item__national {
-    width: 800px;
-    max-width: 100%;
-    margin: 0 auto 40px;
-}
-
-.item__national h3 {
-    padding: 40px 0;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.item__national span {
-    display: block;
-    font-size: 48px;
-    color: #f78219;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-.item__national p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-.item__national img {
-    width: 82%;
-    margin: 0 auto;
-}
-
-.item__national .row {
-    display: flex;
-}
-
-.item__national .row {
-    display: flex;
-    align-items: center;
-}
-
-.item__national:nth-child(even) .row {
-    text-align: right;
-}
-
-.item__national .col-md-6{
-    padding:0;
-}
-
-@media(max-width:767px){
-    .item__national .row {
-        flex-direction: column;
-    }
-    .item__national .col-md-6{
-        padding: 0 15px
-    }
-    .item__national{
-        text-align: center;
-    }
-    .item__national p{
-        padding: 20px 0
-    }
-    .item__national:nth-child(even) .row{
-        text-align: center;
-    }
+  .financial img {
+    position: relative;
+    top: unset;
+    transform: unset;
+  }
 }
