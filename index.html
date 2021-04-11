@@ -156,8 +156,7 @@
           </div>
         </div>
       </div>
-    </section>
-    
+    </section>  
     <section class="financial">
       <div class="row">
         <div class="col-md-7">
@@ -177,8 +176,7 @@
          </div>
         </div>
       </div>
-    </section>
-    
+    </section>  
     <seciton class="national">
       <div class="container">
         <div class="item__national">
@@ -207,7 +205,6 @@
             </div>
           </div>
         </div>
-       
       </div>
     </seciton>
     <section class="equity">
@@ -279,19 +276,25 @@
         </div>
       </div>
     </section>
+    <section class="map">
+      <div class="container">
+        <h2>U.S. Public High School Students with to Gold Access and Gold + Silver Access</h2>
+        <div id="map"></div>
+      </div>
+    </section>
     <section class="top-growth">
       <div class="container">
         <h2>Top 5: States with top Growth from SY2019-’20 to SY2020-‘21</h2>
         <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Gold Access</a></li>
-          <li><a data-toggle="tab" href="#menu1">Gold + silver Access</a></li>
+          <li class="active"><a data-toggle="tab" href="#gold">Gold Access</a></li>
+          <li><a data-toggle="tab" href="#goldsilver">Gold + silver Access</a></li>
         </ul>
         <ul class="dots-list">
           <li>2019-2020</li>
           <li>2020-2021</li>
         </ul>
         <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
+          <div id="gold" class="tab-pane fade in active">
             <div class="table-growth">  
               <div class="header__growth">
                 <div class="medal__header">
@@ -369,9 +372,85 @@
               
             </div>
           </div>
-          <div id="menu1" class="tab-pane fade">
+          <div id="goldsilver" class="tab-pane fade">
+            <div class="table-growth">  
+              <div class="header__growth">
+                <div class="medal__header">
+
+                </div>
+                <div class="titles_header">
+                  <span>State</span>
+                  <span>Growth</span>
+                  <span>% Change</span>
+                </div>
+              </div>
+              <div class="body-table">
+                <div class="medal__body">
+                  <img src="./assets/images/AR_Growth_Gold_and_Silver.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="details__body">
+                    <div class="state__body">
+                      <span>Arkansas</span>
+                    </div>
+                    <div class="growth__body">
+                      <div style="grid-column: 1/40">
+                        <span> 1.8% </span>
+                        <span> 38.8% </span>
+                      </div>
+                    </div>
+                    <div class="change__body">
+                      <span>37%</span>
+                    </div>
+                  </div>
+                  <div class="details__body">
+                    <div class="state__body">
+                      <span>North Carolina*</span>
+                    </div>
+                    <div class="growth__body">
+                      <div style="grid-column: 14/50">
+                        <span> 14.1% </span>
+                        <span> 49% </span>
+                      </div>
+                    </div>
+                    <div class="change__body">
+                      <span>34.9%</span>
+                    </div>
+                  </div>
+                  <div class="details__body">
+                    <div class="state__body">
+                      <span>Iowa</span>
+                    </div>
+                    <div class="growth__body">
+                      <div style="grid-column: 35/68">
+                        <span> 36.6% </span>
+                        <span> 67.5% </span>
+                      </div>
+                    </div>
+                    <div class="change__body">
+                      <span>30.9%</span>
+                    </div>
+                  </div>
+                  <div class="details__body">
+                    <div class="state__body">
+                      <span>Maryland</span>
+                    </div>
+                    <div class="growth__body">
+                      <div style="grid-column: 4/27">
+                        <span> 2.4% </span>
+                        <span> 26.7% </span>
+                      </div>
+                    </div>
+                    <div class="change__body">
+                      <span>24.3%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <a href="#" class="btn btn-orange">Show more</a>
       </div>
     </section>
     <section class="progressText">
@@ -448,5 +527,7 @@
       </div>
     </section>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/mapdata.js"></script>
+    <script src="./assets/js/usmap.js"></script>
   </body>
 </html>
