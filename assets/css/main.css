@@ -601,11 +601,115 @@ h3 {
 
 .header__growth {
   display: grid;
-  grid-template-columns: 274px 864px;
+  grid-template-columns: 300px 839px;
+  border-bottom: 2px solid #5c5c5c;
+  padding: 10px 0;
 }
 
 .titles_header {
   display: flex;
   justify-content: space-between;
-  width: 83%;
+  width: 96%;
+  padding: 0px 20px;
+}
+
+.body-table {
+    display: grid;
+    grid-template-columns: 300px 839px;
+    cursor: pointer;
+    border-bottom: 2px solid #5c5c5c;
+}
+
+.medal__body img {
+    width: 100%;
+}
+
+.titles_header span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.details__body {
+    align-items: center;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 200px 452px 147px;
+    cursor: pointer;
+    padding: 33px 20px;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.details__body:last-child {
+    border: 0px solid;
+}
+
+.change__body {
+    text-align: center;
+}
+
+.growth__body {
+    display: grid;
+    grid-template-columns: repeat(100,1fr);
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.growth__body > div {
+    display: flex;
+    justify-content: space-between;
+    background: #d8d8d8;
+    position: relative;
+    height: 12px;
+}
+
+.growth__body > div span {
+    position: absolute;
+    top: 150%;
+    font-size: 13px;
+}
+
+.growth__body > div span:first-child {
+    left: -10px;
+}
+
+.growth__body > div span:last-child {
+    right: -22px;
+}
+
+.growth__body > div span:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 25px;
+    height: 25PX;
+    background: #275ce4;
+    border-radius: 100%;
+}
+
+
+.growth__body > div span:first-child:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 25px;
+    height: 25px;
+    background: #bcd0ff;
+    border-radius: 100%;
+    left: 0;
+}
+
+.growth__body:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    transform: translateY(-52%);
+    width: 100%;
+    height: 2px;
+    background: #d8d8d8;
+    left: 0;
+    z-index: -1;
 }
