@@ -1,0 +1,140 @@
+/** page structure **/
+#wrapper-school {
+  display: block;
+  width: 100%;
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#keywords thead {
+  cursor: pointer;
+  background: none;
+  border-bottom: 2px solid #5c5c5c;
+}
+#keywords thead tr th {
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 10px;
+}
+#keywords thead tr th span {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+#keywords thead tr th.headerSortUp,
+#keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url("https://i.imgur.com/SP99ZPJ.png");
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url("https://i.imgur.com/RkA9MBo.png");
+}
+
+#keywords tbody tr {
+  color: #555;
+}
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+#keywords tr {
+  border-bottom: 1px solid #5c5c5c;
+}
+
+/* Table */
+
+td.state p {
+  text-align: left !important;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+div.gold {
+  display: flex;
+  align-items: center;
+}
+
+div.gold > div {
+  background: #fff7e3;
+  width: 160px;
+  height: 30px;
+}
+
+div.gold > div .percentage {
+  background-color: #f4ad00;
+  height: 30px;
+}
+
+div.gold span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+/* Silver */
+div.silver {
+  display: flex;
+  align-items: center;
+}
+
+div.silver > div {
+  background: #f5f5f5;
+  width: 160px;
+  height: 30px;
+}
+
+div.silver > div .percentage {
+  background-color: #7e7e7e;
+  height: 30px;
+}
+
+div.silver span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+/* Bronze */
+div.bronze {
+  display: flex;
+  align-items: center;
+}
+
+div.bronze > div {
+  background: #fff7ef;
+  width: 160px;
+  height: 30px;
+}
+
+div.bronze > div .percentage {
+  background-color: #f18119;
+  height: 30px;
+}
+
+div.bronze span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
