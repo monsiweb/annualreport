@@ -1,7 +1,6 @@
-body{
-  font-family: 'Montserrat';
+body {
+  font-family: "Montserrat";
 }
-
 
 h1,
 h2,
@@ -11,46 +10,45 @@ h3 {
   color: #0b1541;
 }
 
-
 /* FLEX ROW */
 
 .row-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
- }
- 
- .row-reverse {
-    flex-direction: row-reverse;
- }
- 
- .row-flex>[class*='col-'] {
-    display: flex;
-    flex-direction: column;
- }
- 
- .row-vcenter {
-    align-items: center;
- }
- 
- .row-vbottom {
-    align-items: flex-end;
- }
- 
- .row-center {
-    justify-content: center;
- }
- 
- @media screen and (min-width: 768px) {
-    .row-stretch {
-       justify-content: stretch;
-    }
- }
- 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.row-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-vcenter {
+  align-items: center;
+}
+
+.row-vbottom {
+  align-items: flex-end;
+}
+
+.row-center {
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .row-stretch {
+    justify-content: stretch;
+  }
+}
+
 /* Global */
 
 .text__section {
@@ -78,8 +76,8 @@ h3 {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
-
+  font-size: 14px;
+  border-radius: 4px;
   display: block;
   max-width: fit-content;
   margin: 0 auto;
@@ -89,6 +87,7 @@ h3 {
   background-color: #ff7b00;
   color: #fff;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 @media(max-width:767px) {
@@ -98,10 +97,7 @@ h3 {
   .methodology__items {
     padding: 15px;
 }
-
-
 }
-
 
 /* hero */
 
@@ -152,7 +148,7 @@ h3 {
     color: #fff;
     line-height: 1.2;
   }
-  .hero img{
+  .hero img {
     width: 300px;
     margin: 0 0 0 -30px;
   }
@@ -208,15 +204,6 @@ h3 {
   }
 }
 
-/* .financial img {
-    position: absolute;
-    width: 35%;
-    top: 45%;
-    transform: translateY(-49%);
-    left: -96px;
-    height: 374px;
-    object-fit: contain;
-} */
 
 .financial img {
   max-width: 100%;
@@ -228,12 +215,6 @@ h3 {
   color: #0b1541;
 }
 
-/* .content__financial {
-  width: 74%;
-  max-width: 100%;
-  margin: 0 0 auto auto;
-  padding: 0 32px;
-} */
 
 .content__financial {
   width: 100%;
@@ -269,7 +250,6 @@ h3 {
   }
 }
 
-
 /* national */
 
 .national {
@@ -294,12 +274,12 @@ h3 {
   display: block;
   font-size: 48px;
   color: #f78219;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
 .item__national p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   font-size: 19px;
@@ -323,19 +303,19 @@ h3 {
   text-align: right;
 }
 
-.item__national .col-md-6{
-  padding:0;
+.item__national .col-md-6 {
+  padding: 0;
 }
 
-@media(max-width:767px){
+@media (max-width: 767px) {
   .item__national .row {
     flex-direction: column;
   }
-  .item__national .col-md-6{
-      padding: 0 15px
+  .item__national .col-md-6 {
+    padding: 0 15px;
   }
-  .item__national{
-      text-align: center;
+  .item__national {
+    text-align: center;
   }
   .item__national h3{
     font-size: 20px;
@@ -344,12 +324,10 @@ h3 {
       padding: 20px 0;
       font-size: 17px;
   }
-  .item__national:nth-child(even) .row{
-      text-align: center;
+  .item__national:nth-child(even) .row {
+    text-align: center;
   }
 }
-
-
 
 /* Requirements Section */
 
@@ -480,7 +458,6 @@ h3 {
 }
 
 @media(max-width:767px) {
-
   .equity__item strong{
     font-size: 36px;
     margin-top: -10px;
@@ -545,12 +522,11 @@ h3 {
   margin: 0 0 30px 0;
 }
 
-@media(max-width:767px){
+@media (max-width: 767px) {
   .map h2 {
     font-size: 22px;
   }
 }
-
 
 /* Top growth */
 
@@ -585,7 +561,7 @@ h3 {
   text-transform: uppercase;
   margin: auto;
   width: 250px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   border: 0px solid transparent;
 }
@@ -598,8 +574,9 @@ h3 {
   border-radius: 10px 0 0 10px;
 }
 
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
   border: 0px solid transparent;
 }
 
@@ -617,7 +594,7 @@ h3 {
 }
 
 .dots-list li:first-child:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -629,13 +606,13 @@ h3 {
 }
 
 .dots-list li:last-child:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 100%;
   width: 25px;
-  height: 25PX;
+  height: 25px;
   background: #275ce4;
   border-radius: 100%;
 }
@@ -655,104 +632,104 @@ h3 {
 }
 
 .body-table {
-    display: grid;
-    grid-template-columns: 300px 839px;
-    cursor: pointer;
-    border-bottom: 2px solid #5c5c5c;
+  display: grid;
+  grid-template-columns: 300px 839px;
+  cursor: pointer;
+  border-bottom: 2px solid #5c5c5c;
 }
 
 .medal__body img {
-    width: 100%;
+  width: 100%;
 }
 
 .titles_header span {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .details__body {
-    align-items: center;
-    justify-content: flex-start;
-    display: grid;
-    grid-template-columns: 200px 452px 147px;
-    cursor: pointer;
-    padding: 33px 20px;
-    border-bottom: 1px solid;
-    text-transform: uppercase;
-    font-weight: 600;
+  align-items: center;
+  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 200px 452px 147px;
+  cursor: pointer;
+  padding: 33px 20px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .details__body:last-child {
-    border: 0px solid;
+  border: 0px solid;
 }
 
 .change__body {
     text-align: right;
+  text-align: center;
 }
 
 .growth__body {
-    display: grid;
-    grid-template-columns: repeat(100,1fr);
-    width: 100%;
-    z-index: 2;
-    position: relative;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  width: 100%;
+  z-index: 2;
+  position: relative;
 }
 
 .growth__body > div {
-    display: flex;
-    justify-content: space-between;
-    background: #d8d8d8;
-    position: relative;
-    height: 12px;
+  display: flex;
+  justify-content: space-between;
+  background: #d8d8d8;
+  position: relative;
+  height: 12px;
 }
 
 .growth__body > div span {
-    position: absolute;
-    top: 150%;
-    font-size: 13px;
+  position: absolute;
+  top: 150%;
+  font-size: 13px;
 }
 
 .growth__body > div span:first-child {
-    left: -10px;
+  left: -10px;
 }
 
 .growth__body > div span:last-child {
-    right: -22px;
+  right: -22px;
 }
 
 .growth__body > div span:last-child:before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: 25px;
-    height: 25PX;
-    background: #275ce4;
-    border-radius: 100%;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #275ce4;
+  border-radius: 100%;
 }
 
-
 .growth__body > div span:first-child:before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    width: 25px;
-    height: 25px;
-    background: #bcd0ff;
-    border-radius: 100%;
-    left: 0;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  width: 25px;
+  height: 25px;
+  background: #bcd0ff;
+  border-radius: 100%;
+  left: 0;
 }
 
 .growth__body:after {
-    content: '';
-    position: absolute;
-    top: 52%;
-    transform: translateY(-52%);
-    width: 100%;
-    height: 2px;
-    background: #d8d8d8;
-    left: 0;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 52%;
+  transform: translateY(-52%);
+  width: 100%;
+  height: 2px;
+  background: #d8d8d8;
+  left: 0;
+  z-index: -1;
 }
 
 .top-growth a.btn.btn-orange {
@@ -760,7 +737,7 @@ h3 {
   text-transform: uppercase;
 }
 
-@media(max-width:767px){
+@media (max-width: 767px) {
   .header__growth,
   .body-table  {
     width: 100%;
@@ -785,6 +762,9 @@ h3 {
   .growth__body {
     display: none;
   }
+  .body-table {
+    width: 1140px;
+  }
   .top-growth .nav-tabs {
     display: block;
     border: 0px solid;
@@ -792,7 +772,7 @@ h3 {
     margin: 0 auto;
     text-align: center;
   }
-  .top-growth .nav-tabs li  {
+  .top-growth .nav-tabs li {
     float: unset;
   }
   .top-growth .nav-tabs li a {
