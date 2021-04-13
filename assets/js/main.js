@@ -1,3 +1,3 @@
 $(function () {
-  $("#keywords").tablesorter();
+  $("#school__table").tablesorter();
 });

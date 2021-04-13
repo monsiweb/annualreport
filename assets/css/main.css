@@ -90,13 +90,13 @@ h3 {
   text-decoration: none;
 }
 
-@media(max-width:767px) {
-  .title__section h3{
-    font-size: 17px
+@media (max-width: 767px) {
+  .title__section h3 {
+    font-size: 17px;
   }
   .methodology__items {
     padding: 15px;
-}
+  }
 }
 
 /* hero */
@@ -204,7 +204,6 @@ h3 {
   }
 }
 
-
 .financial img {
   max-width: 100%;
 }
@@ -214,7 +213,6 @@ h3 {
   line-height: 1.2;
   color: #0b1541;
 }
-
 
 .content__financial {
   width: 100%;
@@ -317,12 +315,12 @@ h3 {
   .item__national {
     text-align: center;
   }
-  .item__national h3{
+  .item__national h3 {
     font-size: 20px;
   }
-  .item__national p{
-      padding: 20px 0;
-      font-size: 17px;
+  .item__national p {
+    padding: 20px 0;
+    font-size: 17px;
   }
   .item__national:nth-child(even) .row {
     text-align: center;
@@ -457,8 +455,8 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-@media(max-width:767px) {
-  .equity__item strong{
+@media (max-width: 767px) {
+  .equity__item strong {
     font-size: 36px;
     margin-top: -10px;
   }
@@ -525,6 +523,185 @@ h3 {
 @media (max-width: 767px) {
   .map h2 {
     font-size: 22px;
+  }
+}
+
+/* Table High School Students */
+
+.table__school {
+  margin-top: 30px;
+}
+.table__school h2 {
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 0 30px 0;
+}
+
+/** page structure **/
+#wrapper-school {
+  display: block;
+  width: 100%;
+}
+
+#school__table {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#school__table thead {
+  cursor: pointer;
+  background: none;
+  border-bottom: 2px solid #5c5c5c;
+}
+#school__table thead tr th {
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 10px;
+}
+#school__table thead tr th span {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+#school__table thead tr th.headerSortUp,
+#school__table thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#school__table thead tr th.headerSortUp span {
+  background-image: url("https://i.imgur.com/SP99ZPJ.png");
+}
+#school__table thead tr th.headerSortDown span {
+  background-image: url("https://i.imgur.com/RkA9MBo.png");
+}
+
+#school__table tbody tr {
+  color: #555;
+}
+#school__table tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+#school__table tr {
+  border-bottom: 1px solid #5c5c5c;
+}
+
+/* Table */
+
+td.state p {
+  text-align: left !important;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+div.gold {
+  display: flex;
+  align-items: center;
+}
+
+div.gold > div {
+  background: #fff7e3;
+  width: 160px;
+  height: 30px;
+}
+
+div.gold > div .percentage {
+  background-color: #f4ad00;
+  height: 30px;
+}
+
+div.gold span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+/* Silver */
+div.silver {
+  display: flex;
+  align-items: center;
+}
+
+div.silver > div {
+  background: #f5f5f5;
+  width: 160px;
+  height: 30px;
+}
+
+div.silver > div .percentage {
+  background-color: #7e7e7e;
+  height: 30px;
+}
+
+div.silver span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+/* Bronze */
+div.bronze {
+  display: flex;
+  align-items: center;
+}
+
+div.bronze > div {
+  background: #fff7ef;
+  width: 160px;
+  height: 30px;
+}
+
+div.bronze > div .percentage {
+  background-color: #f18119;
+  height: 30px;
+}
+
+div.bronze span {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1541;
+}
+
+@media (max-width: 767px) {
+  .table__school h2 {
+    font-size: 22px;
+  }
+
+  .gold > div {
+    display: none;
+  }
+
+  .silver > div {
+    display: none;
+  }
+
+  .bronze > div {
+    display: none;
+  }
+
+  #wrapper-school {
+    overflow: scroll;
+  }
+
+  .table__school .container .row.table__row {
+    margin: 0 auto;
   }
 }
 
@@ -664,8 +841,8 @@ h3 {
 }
 
 .change__body {
-    text-align: right;
-    text-align: right;
+  text-align: right;
+  text-align: right;
 }
 
 .growth__body {
@@ -739,16 +916,16 @@ h3 {
 
 @media (max-width: 767px) {
   .header__growth,
-  .body-table  {
+  .body-table {
     width: 100%;
   }
-  .header__growth{
+  .header__growth {
     display: flex;
   }
-  .medal__body{
+  .medal__body {
     display: none;
   }
-  .body-table{
+  .body-table {
     grid-template-columns: unset;
   }
   .titles_header span:nth-child(3n + 2) {
@@ -791,7 +968,6 @@ h3 {
     font-size: 22px;
   }
 }
-
 
 /* chart */
 
