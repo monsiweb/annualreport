@@ -91,6 +91,16 @@ h3 {
   transition: all 0.3s;
 }
 
+@media(max-width:767px) {
+  .title__section h3{
+    font-size: 17px
+  }
+  .methodology__items {
+    padding: 15px;
+}
+
+
+}
 
 
 /* hero */
@@ -246,7 +256,7 @@ h3 {
     width: 100%;
   }
   .content__financial h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .content__financial p {
     font-size: 19px;
@@ -327,8 +337,12 @@ h3 {
   .item__national{
       text-align: center;
   }
+  .item__national h3{
+    font-size: 20px;
+  }
   .item__national p{
-      padding: 20px 0
+      padding: 20px 0;
+      font-size: 17px;
   }
   .item__national:nth-child(even) .row{
       text-align: center;
@@ -419,7 +433,7 @@ h3 {
 }
 
 .equity__item img {
-  max-width: 300px;
+  max-width: 200px;
   display: block;
   margin: 0 auto;
 }
@@ -463,6 +477,14 @@ h3 {
 
 .title__equity p {
   font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width:767px) {
+
+  .equity__item strong{
+    font-size: 36px;
+    margin-top: -10px;
+  }
 }
 
 /* School Districts */
@@ -628,8 +650,8 @@ h3 {
 .titles_header {
   display: flex;
   justify-content: space-between;
-  width: 96%;
-  padding: 0px 20px;
+  width: 100%;
+  padding: 0 6px;
 }
 
 .body-table {
@@ -665,7 +687,7 @@ h3 {
 }
 
 .change__body {
-    text-align: center;
+    text-align: right;
 }
 
 .growth__body {
@@ -739,14 +761,29 @@ h3 {
 }
 
 @media(max-width:767px){
-  .table-growth {
-    overflow-x: scroll;
+  .header__growth,
+  .body-table  {
+    width: 100%;
   }
-  .header__growth {
-    width: 1140px;
+  .header__growth{
+    display: flex;
   }
-  .body-table {
-    WIDTH: 1140px;
+  .medal__body{
+    display: none;
+  }
+  .body-table{
+    grid-template-columns: unset;
+  }
+  .titles_header span:nth-child(3n + 2) {
+    display: none;
+  }
+  .details__body {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 20px 6px;
+  }
+  .growth__body {
+    display: none;
   }
   .top-growth .nav-tabs {
     display: block;
@@ -764,12 +801,26 @@ h3 {
   }
   .dots-list {
     padding: 20px 0;
+    display: none;
   }
   .dots-list li {
     padding: 0 10px;
     margin: 0 28px;
   }
   .top-growth h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
+}
+
+
+/* chart */
+
+.chart {
+  padding: 30px 0;
+}
+
+.chart h2 {
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.3;
 }
