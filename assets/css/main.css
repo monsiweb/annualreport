@@ -1096,6 +1096,15 @@ canvas#chartJSContainer {
   margin: 0 auto;
 }
 
+section.top-growth .text__description p {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #b8b8b8;
+  margin: 20px 0;
+}
+
 @media(max-width:767px){
   .chart h2{
     font-size: 22px;
