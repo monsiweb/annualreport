@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/amaro.css" />
     <link rel="stylesheet" href="./assets/css/mateus.css" />
   </head>
 
@@ -23,8 +22,12 @@
         <img src="/assets/images/logo.svg" alt="" />
         <h1>2021 State <br />of Financial <br />Education Report</h1>
       </div>
+      <a href="#financial" class="mouse-scroll">
+        <div class="scroll">
+        </div>
+      </a>
     </section>
-    <section class="financial">
+    <section class="financial" id="financial">
       <div class="row">
         <div class="col-md-4">
          <div class="img">
@@ -619,7 +622,9 @@
       <div class="container">
         <h2>Top 5: States with top Growth from SY2019-’20 to SY2020-‘21</h2>
         <div>
-            <canvas id="chartJSContainer" width="600" height="250"></canvas>
+        </div>
+        <div class="table-responsive">
+          <canvas id="chartJSContainer" style="min-height:370px"  class="table"></canvas>
         </div>
       </div>
     </section>
@@ -700,79 +705,6 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/mapdata.js"></script>
     <script src="./assets/js/usmap.js"></script>
-    <Script>
-   var options = {
-    type: 'line',
-    
-    options: {
-      scales: {
-        yAxes: [{
-          display: false,
-          gridLines : {
-            drawOnChartArea: false,
-              display: false,
-              drawBorder: false,
-          }
-        }],
-        xAxes: [{
-          gridLines : {
-            drawOnChartArea: false
-          }
-        }],
-          x: {
-          display: false,
-          title: {
-            display: false,
-            text: 'Month'
-          }
-        },
-        y: {
-          display: false,
-          title: {
-            display: false,
-            text: 'Value'
-          }
-        },
-        
-      },
-      legend: {
-        display: false,
-      },
-    },
-    data: {
-      labels: ["2017-2018", "2018-2019", "2019-2020", "2020-2021", "2021-2022", "2022-2023", "2023-2024", "2024-2025"],
-      datasets: [
-        {
-          label: '# of Votes',
-          data: [15, 20, 29, 32, 36, 40, 49, 53],
-          borderWidth: 4,
-          backgroundColor: 'transparent',
-          borderColor: '#939598',
-          borderDash: [5, 5],
-        },	
-        {
-          label: 'Gold Access state intervention',
-          data: [3, 6, 7, 13, 25, 28, 30, 53],
-          borderWidth: 4,
-          backgroundColor: 'transparent',
-          borderColor: '#f4ad00',
-          borderDash: [5, 5],
-        },
-        {
-          label: '# of Points',
-          data: [3, 6, 7, 9, 15, 18, 20, 22],
-          borderWidth: 4,
-          backgroundColor: 'transparent',
-          borderColor: '#f4ad00',
-          borderDash: [5, 5],
-        }
-      ]
-    }
-}
-
-var ctx = document.getElementById('chartJSContainer').getContext('2d');
-new Chart(ctx, options);
-      </Script>
     <script src="./assets/js/tablesorter.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
